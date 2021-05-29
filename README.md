@@ -29,7 +29,7 @@ npm run test
 
 This and example of the integration and api from Mercado Libre with a NextJs ecosystem. We handle all the api calls for the own backend that NextJS give us this backend has si own nodejs ecosystem.
 
-## Api cosiderations:
+## Api considerations:
 
 **Valid Endpoints:**
   **Default hostname** localhost:3000

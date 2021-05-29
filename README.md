@@ -32,9 +32,11 @@ This and example of the integration and api from Mercado Libre with a NextJs eco
 ## Api cosiderations:
 
 **Valid Endpoints:**
-  **Default hostname localhost:3000**
+  **Default hostname** localhost:3000
+
   **Search Request get Products**
     GET {hostname}/api/search?q=adidas&limit=1
+
   **Get product Information**
     GET {hostname}/api/items/MLA878809844
 
@@ -43,4 +45,3 @@ This and example of the integration and api from Mercado Libre with a NextJs eco
 
 ## Api Request Preview
 <img width="732" alt="ml_api" src="https://user-images.githubusercontent.com/42686771/120084001-60fec680-c092-11eb-8388-40bf4229bfeb.png">
-

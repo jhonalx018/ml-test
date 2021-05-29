@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import './style.sass';
 import Link from 'next/link';
 
 interface IEBreadcrumb {

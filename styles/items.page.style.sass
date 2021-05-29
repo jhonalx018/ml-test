@@ -46,19 +46,25 @@ $default-size-elements: 32px
             margin: 0px
             font-size: 14px
             color: $main-dark-gray-color
+            word-break: break-all
     
     &__detail-decimals
         font-size: 14px
         top: 6px
         position: relative
     
-@media ( max-width: 450px )
+@media ( max-width: $default-phone-width )
     .item
         &__content
-            margin: 10px
+            margin:  0px
             padding: 0px
             display: inline-block
+            width: 100vw
+            overflow: hidden
 
             > div 
                 &:first-child          
                     max-width: 100%
+
+                &:last-child
+                    padding: 20px

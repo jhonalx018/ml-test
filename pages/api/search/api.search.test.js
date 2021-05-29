@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import search from './index';
 
-jest.mock('../../utils/requester', () => {
+jest.mock('../../../utils/requester', () => {
   const { SearchMock } = require('../../../mock');
 
   return () => new Promise((resolve) => resolve({ data: { ...SearchMock } }));

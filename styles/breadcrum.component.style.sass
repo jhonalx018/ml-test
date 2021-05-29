@@ -1,3 +1,5 @@
+@import './styles/basics'
+
 .breadcrumb
     &__content
         margin-top: 20px
@@ -13,3 +15,9 @@
         &:not(:last-child):after
             content: ">"
             margin: 0px 5px
+
+@media ( max-width: $default-phone-width )
+    .breadcrumb
+        &__content
+            padding: 0px 20px
+    

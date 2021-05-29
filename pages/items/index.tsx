@@ -1,15 +1,14 @@
 import React, { ReactElement } from 'react';
-import dynamic from 'next/dynamic';
 
 import { useRouter } from 'next/router';
 
 import requester from '../../utils/requester';
 import { IESearchListResult } from '../../interfaces';
 
-const SearchBar = dynamic(() => import('../../components/SearchBar'));
-const CardItem = dynamic(() => import('../../components/CardItem'));
-const Breadcrumb = dynamic(() => import('../../components/Breadcrumb'));
-const Header = dynamic(() => import('../../components/Header'));
+import SearchBar from '../../components/SearchBar/index';
+import Breadcrumb from '../../components/Breadcrumb/index';
+import Header from '../../components/Header/index';
+import CardItem from '../../components/CardItem/index';
 
 const { LOCAL_API_PATH } = process.env;
 
@@ -22,7 +21,7 @@ export default ({ categories = [], items = [] }: IESearchListResult): ReactEleme
   };
 
   return (
-    <div>
+    <>
       <Header {...headerProps} />
       <SearchBar />
       <Breadcrumb data={categories} />
@@ -33,7 +32,7 @@ export default ({ categories = [], items = [] }: IESearchListResult): ReactEleme
       {!items.length && (
         <p className="not-found-page__link">No se encontraron resultados, Sigue intentado</p>
       )}
-    </div>
+    </>
   );
 };
 

@@ -1,13 +1,16 @@
-const withSass = require('@zeit/next-sass');
+const path = require('path');
 const withPlugins = require('next-compose-plugins');
 
 module.exports = withPlugins([
-  withSass({
-    target: 'serverless',
-  })], {
-  images: {
-    loader: 'imgix',
-    path: '',
-    domains: ['*'],
+  {
+    sassOptions: {
+      includePaths: [path.join(__dirname, 'styles')],
+    },
   },
-});
+  {
+    images: {
+      loader: 'imgix',
+      path: '',
+      domains: ['*'],
+    },
+  }]);

@@ -2,7 +2,6 @@ import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import './style.sass';
 import { IEItemsSearchResult } from '../../interfaces';
 
 interface IECardItemData {

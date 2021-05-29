@@ -1,8 +1,6 @@
 import React, { useState, ReactElement, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import './style.sass';
-
 export default (): ReactElement => {
   const router = useRouter();
   const basePath = '/items';

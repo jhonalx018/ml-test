@@ -1,0 +1,16 @@
+exports.ids = [3];
+exports.modules = {
+
+/***/ "./components/Header/index.tsx":
+/*!*************************************!*\
+  !*** ./components/Header/index.tsx ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n\nvar _jsxFileName = \"/Users/jhon.gomez/Documents/GitHub/ml-test-real/components/Header/index.tsx\";\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (({\n  title,\n  metaDescription\n}) => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {\n  children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"title\", {\n    children: title\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 11,\n    columnNumber: 5\n  }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"meta\", {\n    name: \"description\",\n    content: metaDescription\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 12,\n    columnNumber: 5\n  }, undefined)]\n}, void 0, true, {\n  fileName: _jsxFileName,\n  lineNumber: 10,\n  columnNumber: 3\n}, undefined));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnRzL0hlYWRlci9pbmRleC50c3g/MTliZiJdLCJuYW1lcyI6WyJ0aXRsZSIsIm1ldGFEZXNjcmlwdGlvbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUNBO0FBT2UsZ0VBQUM7QUFBRUEsT0FBRjtBQUFTQztBQUFULENBQUQsa0JBQ2IscUVBQUMsZ0RBQUQ7QUFBQSwwQkFDRTtBQUFBLGNBQVFEO0FBQVI7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQURGLGVBRUU7QUFBTSxRQUFJLEVBQUMsYUFBWDtBQUF5QixXQUFPLEVBQUVDO0FBQWxDO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFGRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFERiIsImZpbGUiOiIuL2NvbXBvbmVudHMvSGVhZGVyL2luZGV4LnRzeC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFJlYWN0RWxlbWVudCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCc7XG5cbmludGVyZmFjZSBJRUhlYWRlciB7XG4gICAgdGl0bGU6IHN0cmluZztcbiAgICBtZXRhRGVzY3JpcHRpb246IHN0cmluZ1xufVxuXG5leHBvcnQgZGVmYXVsdCAoeyB0aXRsZSwgbWV0YURlc2NyaXB0aW9uIH06IElFSGVhZGVyKTogUmVhY3RFbGVtZW50ID0+IChcbiAgPEhlYWQ+XG4gICAgPHRpdGxlPnt0aXRsZX08L3RpdGxlPlxuICAgIDxtZXRhIG5hbWU9XCJkZXNjcmlwdGlvblwiIGNvbnRlbnQ9e21ldGFEZXNjcmlwdGlvbn0gLz5cbiAgPC9IZWFkPlxuKTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/Header/index.tsx\n");
+
+/***/ })
+
+};;

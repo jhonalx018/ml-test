@@ -1,0 +1,56 @@
+{
+"root": true,
+"parser": "babel-eslint",
+"extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb"
+],
+"env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+},
+"parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    "jsx": true
+    }
+},
+"settings": {
+    "react": {
+        "version": "detect"
+    },
+    "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx", ".png"]
+        }
+    }
+},
+"plugins": [],
+"rules":  {
+        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx", ".png"] }],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "import/extensions": "off",
+        "camelcase": ["error", {"properties": "never"}],
+        "import/prefer-default-export": "off",
+        "no-throw-literal": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "no-empty": "off"
+    },
+"overrides": [
+        {
+            "files": ["**/*.ts", "**/*.tsx"],
+            "rules": {
+            "camelcase": ["off"]
+            }
+        }
+    ]
+}

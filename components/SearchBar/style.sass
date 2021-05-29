@@ -1,0 +1,44 @@
+@import './styles/basics'
+
+.search
+    &__content
+        background-color: $main-yellow-color
+        margin-bottom: 20px
+    
+    &__content-input
+        display: flex
+        padding: 10px 0px
+        justify-content: space-between
+        position: relative
+        margin: 0
+    
+    &__content-inner-input
+        width: calc( 100% - 50px )
+        position: relative
+
+    &__input
+        padding: 7px 60px 9px 15px
+        -webkit-border-radius: 2px
+        border-radius: 2px
+        background-color: $main-white-color
+        border: 0 rgba(0,0,0,.2)
+        width: 100%
+    
+    &__search-icon
+        position: absolute
+        top: 8px
+        right: 1px
+        cursor: pointer
+        background: white
+        border: 0px
+
+        &:before
+            content: ""
+            height: 10px
+            width: 1px
+            border-left: 1px solid $main-gray-color
+            top: -2.5px
+            right: 3px
+            position: relative
+
+    

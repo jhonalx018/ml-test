@@ -1,0 +1,37 @@
+@import './styles/basics'
+
+.card
+    &__image
+        object-fit: contain
+    
+    &__content-item
+        display: flex
+        justify-content: space-between
+        padding: 0px 15px
+        border-bottom: 1px solid $main-gray-color
+    
+    &__content-image
+        display: flex
+
+        + p
+            font-weight: 300
+            font-size: 12px
+            margin-right: 4px
+            color: #666
+    
+    &__content-pricing
+        display: flex
+
+        p
+            margin-right: 15px
+            font-size: 24px
+            font-weight: 400
+            margin-right: 8px
+            line-height: 1.25
+
+        img
+            object-fit: contain
+
+        + p
+            font-size: 14px
+            font-weight: 300

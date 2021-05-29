@@ -1,0 +1,64 @@
+@import './styles/basics'
+
+$default-size-elements: 32px
+
+.item
+    &__content
+        display: flex
+        margin: 20px
+        padding: $default-size-elements
+        
+        > div 
+            &:first-child          
+                max-width: 75%
+
+    &__button-order
+        width: 100%
+        padding: 12px
+        background-color: $main-blue-color
+        border: 0px
+        color: $main-white-color
+        cursor: pointer
+
+    &__quantity-sell
+        font-size: 12px
+        color: $main-dark-gray-color
+
+    &__title
+        font-size: 18px
+        color: $main-black-color
+        margin-bottom: $default-size-elements
+        font-weight: 500
+
+    &__price
+        font-size: $default-size-elements
+        font-weight: 300
+        margin-bottom: $default-size-elements
+        position: relative
+        display: flex
+
+    &__description-title
+        font-size: 24px
+        font-weight: 300
+        margin-bottom: $default-size-elements
+
+        + p
+            margin: 0px
+            font-size: 14px
+            color: $main-dark-gray-color
+    
+    &__detail-decimals
+        font-size: 14px
+        top: 6px
+        position: relative
+    
+@media ( max-width: 450px )
+    .item
+        &__content
+            margin: 10px
+            padding: 0px
+            display: inline-block
+
+            > div 
+                &:first-child          
+                    max-width: 100%

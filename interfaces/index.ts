@@ -29,6 +29,7 @@ export interface IEItem {
   description: string,
   categories: string[]
 }
+
 export interface IEItemDetail {
   author: Object;
   item: IEItem

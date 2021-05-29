@@ -1,9 +1,7 @@
 import SearchBar from '../components/SearchBar';
 
-const IndexPage = () => (
-  <div>
+export default () => (
+  <>
     <SearchBar />
-  </div>
+  </>
 );
-
-export default IndexPage;

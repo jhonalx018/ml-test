@@ -1,14 +1,14 @@
 import React, { ReactElement } from 'react';
-
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 
 import requester from '../../utils/requester';
 import { IESearchListResult } from '../../interfaces';
 
-import SearchBar from '../../components/SearchBar/index';
-import Breadcrumb from '../../components/Breadcrumb/index';
-import Header from '../../components/Header/index';
-import CardItem from '../../components/CardItem/index';
+const SearchBar = dynamic(() => import('../../components/SearchBar'));
+const Breadcrumb = dynamic(() => import('../../components/Breadcrumb'));
+const Header = dynamic(() => import('../../components/Header'));
+const CardItem = dynamic(() => import('../../components/CardItem'));
 
 const { LOCAL_API_PATH } = process.env;
 

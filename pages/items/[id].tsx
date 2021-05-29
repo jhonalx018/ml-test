@@ -1,12 +1,13 @@
 import React, { ReactElement } from 'react';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
 import requester from '../../utils/requester';
 import { IEItemDetail } from '../../interfaces';
 
-import SearchBar from '../../components/SearchBar/index';
-import Breadcrumb from '../../components/Breadcrumb/index';
-import Header from '../../components/Header/index';
+const SearchBar = dynamic(() => import('../../components/SearchBar'));
+const Breadcrumb = dynamic(() => import('../../components/Breadcrumb'));
+const Header = dynamic(() => import('../../components/Header'));
 
 const { LOCAL_API_PATH } = process.env;
 

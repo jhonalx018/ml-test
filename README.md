@@ -4,7 +4,7 @@ This small repository has use to store the front end test for MERCADO LIBRE
 
 ##  :floppy_disk: Technical requirements
 
-**prerequisites**
+**Prerequisites**
 
 1. [Nodejs](https://nodejs.dev/)
 2. [npm](https://www.npmjs.com/) | [yarn](https://yarnpkg.com/)

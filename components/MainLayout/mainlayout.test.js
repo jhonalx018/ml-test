@@ -7,5 +7,6 @@ describe('card Item component', () => {
     const tree = component.toJSON();
 
     expect(tree).toBeTruthy();
+    expect(tree.type).toEqual('div');
   });
 });

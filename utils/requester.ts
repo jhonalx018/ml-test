@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 
 interface IEAxiosGet {
   url: string;
-  config: AxiosRequestConfig
+  config?: AxiosRequestConfig
 }
 
 export default ({

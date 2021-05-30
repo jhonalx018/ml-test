@@ -18,19 +18,20 @@ const author = {
 export default async ({ method, query }: any, res: any) => {
   try {
     if (method.toUpperCase() === HTTPMethod.GET) {
+      /*
+        We can use a axios.all, promomise.all or promise.allSettled but the main idea is
+        throw an error when one of this request is broken
+      */
       const { data: item } = await requester({
         url: `${ML_API_PATH}/items/${query.id}`,
-        config: { },
       });
 
       const { data: description } = await requester({
         url: `${ML_API_PATH}/items/${query.id}/description`,
-        config: { },
       });
 
       const { data: categories } = await requester({
         url: `${ML_API_PATH}/categories/${item.category_id}`,
-        config: { },
       });
 
       const response: IEItemDetail = {

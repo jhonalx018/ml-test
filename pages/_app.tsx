@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Global Layout
-import LayoutHeader from '../components/HeaderLayout';
+import MainLayout from '../components/MainLayout';
 
 // style componentes
 import '../styles/globals.sass';
@@ -14,9 +14,9 @@ import '../styles/items.page.style.sass';
 
 function MyApp({ Component, pageProps }: any) {
   return (
-    <LayoutHeader {...pageProps}>
+    <MainLayout {...pageProps}>
       <Component />
-    </LayoutHeader>
+    </MainLayout>
   );
 }
 

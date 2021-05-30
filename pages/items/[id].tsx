@@ -1,27 +1,22 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useContext } from 'react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 
 import requester from '../../utils/requester';
 import { IEItemDetail } from '../../interfaces';
-
-const SearchBar = dynamic(() => import('../../components/SearchBar'));
-const Breadcrumb = dynamic(() => import('../../components/Breadcrumb'));
-const Header = dynamic(() => import('../../components/Header'));
+import { mainContext } from '../../context';
 
 const { LOCAL_API_PATH } = process.env;
 
 export default ({ item }: IEItemDetail): ReactElement => {
-  const headerProps = {
+  const context = useContext(mainContext);
+
+  context.headers = {
     title: `Mercado Libre | ${item?.title}`,
     metaDescription: `Mercado Libre | ${item?.description}`,
   };
 
   return (
     <>
-      <Header {...headerProps} />
-      <SearchBar />
-      <Breadcrumb data={item.categories} />
       <div className="body-content body-content__info">
         <div className="item__content">
           <div>

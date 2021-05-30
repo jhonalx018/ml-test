@@ -1,30 +1,27 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useContext } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 
 import requester from '../../utils/requester';
 import { IESearchListResult } from '../../interfaces';
+import { mainContext } from '../../context';
 
-const SearchBar = dynamic(() => import('../../components/SearchBar'));
-const Breadcrumb = dynamic(() => import('../../components/Breadcrumb'));
-const Header = dynamic(() => import('../../components/Header'));
 const CardItem = dynamic(() => import('../../components/CardItem'));
 
 const { LOCAL_API_PATH } = process.env;
 
 export default ({ categories = [], items = [] }: IESearchListResult): ReactElement => {
   const router = useRouter();
+  const context = useContext(mainContext);
 
-  const headerProps = {
+  context.headers = {
     title: `Buscador mercado libre ${router.query?.search || ''}`,
     metaDescription: `Resultados buscador mercado libre ${categories.join(', ')}`,
   };
 
   return (
     <>
-      <Header {...headerProps} />
-      <SearchBar />
-      <Breadcrumb data={categories} />
+
       <div className="body-content body-content__info">
         <CardItem data={items} />
       </div>

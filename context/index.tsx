@@ -1,16 +1,11 @@
 import { createContext } from 'react';
 
-interface IEHeader {
-    title?: string;
-    metaDescription?: string
-}
-
 interface IEContextValues {
-    headers: IEHeader
+    getHeaders?: Function
 }
 
 export const defaultContextValue: IEContextValues = {
-  headers: {},
+  getHeaders: () => {},
 };
 
 export const mainContext = createContext(defaultContextValue);

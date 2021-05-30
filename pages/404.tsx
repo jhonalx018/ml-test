@@ -1,15 +1,18 @@
-import React, { ReactElement, useContext } from 'react';
+import React, { ReactElement, useContext, useEffect } from 'react';
 import Link from 'next/link';
 
 import { mainContext } from '../context';
 
 export default (): ReactElement => {
-  const context = useContext(mainContext);
+  const { getHeaders = () => {} } = useContext(mainContext);
 
-  context.headers = {
-    title: 'Mercado Libre | Pagina no econtrada (404)',
-    metaDescription: 'Elemento que estas buscando no se encontro',
-  };
+  useEffect(() => {
+    getHeaders({
+      title: 'Mercado Libre | Pagina no econtrada (404)',
+      metaDescription: 'Elemento que estas buscando no se encontro',
+
+    });
+  }, []);
 
   return (
     <div>

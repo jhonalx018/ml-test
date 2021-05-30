@@ -1,4 +1,4 @@
-import React, { ReactElement, useContext } from 'react';
+import React, { ReactElement, useContext, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 
@@ -12,12 +12,14 @@ const { LOCAL_API_PATH } = process.env;
 
 export default ({ categories = [], items = [] }: IESearchListResult): ReactElement => {
   const router = useRouter();
-  const context = useContext(mainContext);
+  const { getHeaders = () => {} } = useContext(mainContext);
 
-  context.headers = {
-    title: `Buscador mercado libre ${router.query?.search || ''}`,
-    metaDescription: `Resultados buscador mercado libre ${categories.join(', ')}`,
-  };
+  useEffect(() => {
+    getHeaders({
+      title: `Buscador mercado libre | ${router.query?.search || ''}`,
+      metaDescription: `Resultados buscador mercado libre | ${categories.join(', ')} probando`,
+    });
+  }, [router.query?.search, categories]);
 
   return (
     <>

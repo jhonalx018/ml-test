@@ -1,4 +1,4 @@
-import React, { ReactElement, useContext } from 'react';
+import React, { ReactElement, useContext, useEffect } from 'react';
 import Image from 'next/image';
 
 import requester from '../../utils/requester';
@@ -8,12 +8,15 @@ import { mainContext } from '../../context';
 const { LOCAL_API_PATH } = process.env;
 
 export default ({ item }: IEItemDetail): ReactElement => {
-  const context = useContext(mainContext);
+  const { getHeaders = () => {} } = useContext(mainContext);
 
-  context.headers = {
-    title: `Mercado Libre | ${item?.title}`,
-    metaDescription: `Mercado Libre | ${item?.description}`,
-  };
+  useEffect(() => {
+    getHeaders({
+      title: `Mercado Libre | ${item?.title}`,
+      metaDescription: `Mercado Libre | ${item?.description}`,
+
+    });
+  }, [item]);
 
   return (
     <>

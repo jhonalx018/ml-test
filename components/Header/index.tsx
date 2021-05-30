@@ -1,14 +1,14 @@
-import { ReactElement, useContext } from 'react';
+import { ReactElement } from 'react';
 import Head from 'next/head';
-import { mainContext } from '../../context';
 
-export default (): ReactElement => {
-  const { headers: { title, metaDescription } } = useContext(mainContext);
+interface IEHeader {
+  title?: string;
+  metaDescription?: string
+}
 
-  return (
-    <Head>
-      <title>{title || 'Mercado Libre'}</title>
-      <meta name="description" content={metaDescription || 'Mercado Libre'} />
-    </Head>
-  );
-};
+export default ({ title, metaDescription }: IEHeader): ReactElement => (
+  <Head>
+    <title>{title || 'Mercado Libre'}</title>
+    <meta name="description" content={metaDescription || 'Mercado Libre'} />
+  </Head>
+);

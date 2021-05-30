@@ -43,7 +43,8 @@
         "import/prefer-default-export": "off",
         "no-throw-literal": "off",
         "jsx-a11y/anchor-is-valid": "off",
-        "no-empty": "off"
+        "no-empty": "off",
+        "react-hooks/exhaustive-deps": "off"
     },
 "overrides": [
         {

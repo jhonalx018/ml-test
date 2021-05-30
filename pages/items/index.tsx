@@ -21,7 +21,6 @@ export default ({ categories = [], items = [] }: IESearchListResult): ReactEleme
 
   return (
     <>
-
       <div className="body-content body-content__info">
         <CardItem data={items} />
       </div>

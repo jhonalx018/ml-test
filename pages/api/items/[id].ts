@@ -57,7 +57,6 @@ export default async ({ method, query }: any, res: any) => {
 
     throw new ExceptionApi(`Method Not Allowed ${method}`, '', StatusCodes.METHOD_NOT_ALLOWED);
   } catch (exception) {
-    console.log(exception);
     if (exception instanceof ExceptionApi) {
       return res.status(exception.statusCode).send(exception);
     }

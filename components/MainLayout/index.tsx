@@ -7,11 +7,15 @@ const SearchBar = dynamic(() => import('../SearchBar'));
 const Breadcrumb = dynamic(() => import('../Breadcrumb'));
 const Header = dynamic(() => import('../Header'));
 
-export default ({ children, ...props }: any): ReactElement => (
+/*
+  With Pass component as paramters
+  to avoid React.Clone element using composition {props.children}
+*/
+export default ({ Component, ...props }: any): ReactElement => (
   <mainContext.Provider value={defaultContextValue}>
     <Header />
     <SearchBar />
     <Breadcrumb data={props?.categories ?? []} />
-    {React.cloneElement(children, { ...props })}
+    <Component {...props} />
   </mainContext.Provider>
 );

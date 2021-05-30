@@ -14,9 +14,7 @@ import '../styles/items.page.style.sass';
 
 function MyApp({ Component, pageProps }: any) {
   return (
-    <MainLayout {...pageProps}>
-      <Component />
-    </MainLayout>
+    <MainLayout {...pageProps} Component={Component} />
   );
 }
 

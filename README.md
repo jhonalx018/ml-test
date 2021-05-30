@@ -4,6 +4,12 @@ This small repository has use to store the front end test for MERCADO LIBRE
 
 ##  :floppy_disk: Technical requirements
 
+**prerequisites**
+
+1. [Nodejs](https://nodejs.dev/)
+2. [npm](https://www.npmjs.com/) | [yarn](https://yarnpkg.com/)
+3. [NextJs](https://nextjs.org/)
+
 **Frameword NextJs**
 
 Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.

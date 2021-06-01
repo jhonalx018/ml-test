@@ -4,13 +4,16 @@
     &__content
         background-color: $main-yellow-color
         margin-bottom: 20px
-    
+
     &__content-input
         display: flex
         padding: 10px 0px
         justify-content: space-between
         position: relative
         margin: 0
+
+        @media ( max-width: $default-phone-width )
+            padding: 10px 14px    
     
     &__content-inner-input
         width: calc( 100% - 50px )
@@ -40,5 +43,3 @@
             top: -2.5px
             right: 3px
             position: relative
-
-    

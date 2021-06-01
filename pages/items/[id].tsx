@@ -19,39 +19,37 @@ export default ({ item }: IEItemDetail): ReactElement => {
   }, [item]);
 
   return (
-    <>
-      <div className="body-content body-content__info">
-        <div className="item-detail-page__content">
-          <div>
-            <figure>
-              <Image src={item.picture} width={680} height={780} alt={item.title} />
+    <div className="body-content body-content__info">
+      <div className="item-detail-page__content">
+        <div>
+          <figure>
+            <Image src={item.picture} width={680} height={780} alt={item.title} />
 
-              <p className="item-detail-page__description-title">Descripcion del producto</p>
-              <p className="item-detail-page__description-info">{item.description}</p>
-            </figure>
-          </div>
-          <div>
-            <p className="item-detail-page__quantity-sell">
-              {item.condition}
-              {' '}
-              -
-              {' '}
-              {item.sold_quantity}
-              {' '}
-              Vendidos
-            </p>
-            <p className="item-detail-page__title">{item.title}</p>
-            <p className="item-detail-page__price">
-              {item.price.currency}
-              {' '}
-              {item.price.amount}
-              <span className="item-detail-page__detail-decimals">.00</span>
-            </p>
-            <button className="item-detail-page__button-order" type="button" aria-label="Compra YA">Comprar</button>
-          </div>
+            <p className="item-detail-page__description-title">Descripcion del producto</p>
+            <p className="item-detail-page__description-info">{item.description}</p>
+          </figure>
+        </div>
+        <div>
+          <p className="item-detail-page__quantity-sell">
+            {item.condition}
+            {' '}
+            -
+            {' '}
+            {item.sold_quantity}
+            {' '}
+            Vendidos
+          </p>
+          <p className="item-detail-page__title">{item.title}</p>
+          <p className="item-detail-page__price">
+            {item.price.currency}
+            {' '}
+            {item.price.amount}
+            <span className="item-detail-page__detail-decimals">.00</span>
+          </p>
+          <button className="item-detail-page__button-order" type="button" aria-label="Compra YA">Comprar</button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

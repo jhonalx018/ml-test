@@ -10,7 +10,6 @@ export default (): ReactElement => {
     getHeaders({
       title: 'Mercado Libre | Pagina no econtrada (404)',
       metaDescription: 'Elemento que estas buscando no se encontro',
-
     });
   }, []);
 

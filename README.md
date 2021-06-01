@@ -52,6 +52,6 @@ This and example of the integration and api from Mercado Libre with a NextJs eco
 ## Api Request Preview
 <img width="732" alt="ml_api" src="https://user-images.githubusercontent.com/42686771/120084001-60fec680-c092-11eb-8388-40bf4229bfeb.png">
 
-## Improvements
+## Improvements to be made
 
 1. Add module Resolver for babel and avoid use relatives path
